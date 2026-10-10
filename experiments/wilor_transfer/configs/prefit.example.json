@@ -1,0 +1,7 @@
+{
+  "prefit_run": "outputs/prefit-reference",
+  "head_sha256": "b9bbbec8fa09a8f056632793123efc745b46b4b94bcb45d2cfa1cdd6cf37dcbd",
+  "extra_head_updates": 256,
+  "extra_head_images": 32,
+  "note": "Prepare the original hash-matched prefitted head separately; this path is an example."
+}

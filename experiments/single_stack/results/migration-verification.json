@@ -1,0 +1,30 @@
+{
+  "verified_on": "2026-10-01",
+  "scope": "Migration verification only; not an additional accuracy experiment",
+  "clean_public_tree": {
+    "core_tests": 6,
+    "asset_free": true,
+    "historical_full38_audit_matches_published": true,
+    "learning_curve_matches_published": true
+  },
+  "old_new_numerical_parity": {
+    "paired_sample_tensors": "exact",
+    "native_paired_loss_epochs_0_and_5": "exact",
+    "feature_loss": "exact",
+    "student_forward_mesh_uv_feature": "exact"
+  },
+  "asset_backed_training_smoke": {
+    "completed_updates_per_arm": 1,
+    "paused_after_one_shared_batch": true,
+    "A_reload_max_abs": {
+      "mesh_pred": 8.940696716308594e-08,
+      "uv_pred": 0.0,
+      "feature": 0.0
+    },
+    "B_reload_max_abs": {
+      "mesh_pred": 1.1920928955078125e-07,
+      "uv_pred": 0.0,
+      "feature": 0.0
+    }
+  }
+}

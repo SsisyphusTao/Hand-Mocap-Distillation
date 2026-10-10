@@ -1,0 +1,59 @@
+{
+  "source_report": "mobrecon-release-report-20260930-01",
+  "source_video": "phone-comparison.mp4",
+  "source_video_sha256": "c09a7f087da2ff23c34f1f4b03e8338fc10d3a62848e75bbd36207a9efca7373",
+  "source_verification_sha256": "326ef0c6b1fb323a4a0e2c945bea7b3329099a357ebb964a9ee91c4c86a65c31",
+  "comparison": {
+    "teacher": "Full MobRecon supervised epoch 9",
+    "A": "Single-stack supervised epoch 38",
+    "B": "Single-stack feature KD epoch 38",
+    "input": "Same phone recording and frozen detections",
+    "display": "Original four panels; 2D landmarks above raw wrist-relative 3D joints, same scale; no smoothing",
+    "inference_device": "Desktop GPU"
+  },
+  "full_video": {
+    "path": "figures/hand-demo.mp4",
+    "sha256": "c09a7f087da2ff23c34f1f4b03e8338fc10d3a62848e75bbd36207a9efca7373",
+    "bytes": 5097586,
+    "width": 1280,
+    "height": 720,
+    "frames": 537,
+    "fps": 30,
+    "duration_seconds": 17.9,
+    "copy": "Byte-identical to source comparison; no audio track"
+  },
+  "gif": {
+    "path": "figures/hand-demo.gif",
+    "sha256": "3d5a0db49789d4b8118dccea2c218faaaa71d58ca17996db31c66fd036ef68ab",
+    "bytes": 4284788,
+    "source_start_seconds": 2,
+    "source_end_seconds": 10,
+    "duration_seconds": 8,
+    "width": 800,
+    "height": 450,
+    "frames": 80,
+    "fps": 10,
+    "loop": 0,
+    "playback_speed": 1,
+    "changes": "Continuous excerpt, spatial downscaling, frame-rate reduction and palette quantization only"
+  },
+  "ffmpeg_version": "4.4.2-0ubuntu0.22.04.1",
+  "rebuild_gif_from_repo_root": [
+    "ffmpeg",
+    "-v",
+    "error",
+    "-n",
+    "-ss",
+    "2",
+    "-t",
+    "8",
+    "-i",
+    "figures/hand-demo.mp4",
+    "-filter_complex",
+    "[0:v]fps=10,scale=800:-1:flags=lanczos,split[a][b];[a]palettegen=max_colors=96:stats_mode=diff[p];[b][p]paletteuse=dither=none",
+    "-an",
+    "-loop",
+    "0",
+    "outputs/hand-demo-rebuilt.gif"
+  ]
+}

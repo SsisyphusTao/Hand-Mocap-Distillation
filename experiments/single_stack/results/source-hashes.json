@@ -1,0 +1,6 @@
+{
+  "source_curve_sha256": "76acf4a1d50608e9dca11963748375d4e4f381d2392b9d6e3cf1bbee305dac12",
+  "audited_metric_verification_sha256": "5bdc21cc829aee6cf1b0f93a2c657eb9bf15b636202c9cfccb7ec05048e20fba",
+  "published_epoch_metrics_sha256": "efdd9b66ee905cfd81cc7459f03919e625334e4b4847e3fb11029fe308d31625",
+  "learning_curves_sha256": "4f9f6d9367c1e43df533896ba4fba78a01e02de7fe21093aa11be24901b37e4e"
+}

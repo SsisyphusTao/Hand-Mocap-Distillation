@@ -1,0 +1,5 @@
+-r requirements-core.txt
+scipy==1.13.1
+openmesh==1.2.1
+scikit-learn==1.5.2
+matplotlib==3.10.9

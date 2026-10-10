@@ -1,0 +1,247 @@
+{
+  "final": {
+    "A": {
+      "samples": 256,
+      "mpjpe_mm": 21.7642879486084,
+      "median_sample_mpjpe_mm": 18.005414962768555,
+      "p95_joint_error_mm": 61.5670108795166,
+      "pa_mpjpe_mm": 9.324066916452276,
+      "per_finger_mpjpe_mm": {
+        "thumb": 17.905445098876953,
+        "index": 25.84264373779297,
+        "middle": 25.241548538208008,
+        "ring": 22.989286422729492,
+        "pinky": 22.283588409423828
+      }
+    },
+    "B": {
+      "samples": 256,
+      "mpjpe_mm": 19.218708038330078,
+      "median_sample_mpjpe_mm": 14.592914581298828,
+      "p95_joint_error_mm": 51.461785316467285,
+      "pa_mpjpe_mm": 8.15256673429386,
+      "per_finger_mpjpe_mm": {
+        "thumb": 14.847570419311523,
+        "index": 22.310604095458984,
+        "middle": 22.523216247558594,
+        "ring": 20.811420440673828,
+        "pinky": 20.40540313720703
+      }
+    }
+  },
+  "teacher": {
+    "samples": 256,
+    "mpjpe_mm": 14.539173126220703,
+    "median_sample_mpjpe_mm": 12.411945343017578,
+    "p95_joint_error_mm": 38.0214262008667,
+    "pa_mpjpe_mm": 7.114383646125375,
+    "per_finger_mpjpe_mm": {
+      "thumb": 11.966939926147461,
+      "index": 16.880210876464844,
+      "middle": 16.955602645874023,
+      "ring": 15.293859481811523,
+      "pinky": 15.234046936035156
+    }
+  },
+  "delta_B_minus_A_mm": -2.5455801816787678,
+  "mpjpe_reduction_percent": 11.696133640416628,
+  "paired_image_bootstrap_95_interval_mm": [
+    -4.19082747476616,
+    -1.0780369476122313
+  ],
+  "B_better_image_fraction": 0.6171875,
+  "best_development": {
+    "A": {
+      "epoch": 35,
+      "metrics": {
+        "samples": 256,
+        "mpjpe_mm": 21.700334548950195,
+        "median_sample_mpjpe_mm": 17.555675506591797,
+        "p95_joint_error_mm": 60.96789264678955,
+        "pa_mpjpe_mm": 9.157862504321296,
+        "per_finger_mpjpe_mm": {
+          "thumb": 18.06511116027832,
+          "index": 25.683671951293945,
+          "middle": 25.261873245239258,
+          "ring": 22.630998611450195,
+          "pinky": 22.28510093688965
+        }
+      }
+    },
+    "B": {
+      "epoch": 35,
+      "metrics": {
+        "samples": 256,
+        "mpjpe_mm": 18.558788299560547,
+        "median_sample_mpjpe_mm": 14.58109188079834,
+        "p95_joint_error_mm": 50.40253829956055,
+        "pa_mpjpe_mm": 8.211970111766211,
+        "per_finger_mpjpe_mm": {
+          "thumb": 14.548324584960938,
+          "index": 21.481674194335938,
+          "middle": 21.62116813659668,
+          "ring": 20.001249313354492,
+          "pinky": 19.78122901916504
+        }
+      }
+    }
+  },
+  "verified_epochs": [
+    {
+      "epoch": 1,
+      "prediction_metrics_and_checkpoint_hashes_verified": true
+    },
+    {
+      "epoch": 2,
+      "prediction_metrics_and_checkpoint_hashes_verified": true
+    },
+    {
+      "epoch": 3,
+      "prediction_metrics_and_checkpoint_hashes_verified": true
+    },
+    {
+      "epoch": 4,
+      "prediction_metrics_and_checkpoint_hashes_verified": true
+    },
+    {
+      "epoch": 5,
+      "prediction_metrics_and_checkpoint_hashes_verified": true
+    },
+    {
+      "epoch": 6,
+      "prediction_metrics_and_checkpoint_hashes_verified": true
+    },
+    {
+      "epoch": 7,
+      "prediction_metrics_and_checkpoint_hashes_verified": true
+    },
+    {
+      "epoch": 8,
+      "prediction_metrics_and_checkpoint_hashes_verified": true
+    },
+    {
+      "epoch": 9,
+      "prediction_metrics_and_checkpoint_hashes_verified": true
+    },
+    {
+      "epoch": 10,
+      "prediction_metrics_and_checkpoint_hashes_verified": true
+    },
+    {
+      "epoch": 11,
+      "prediction_metrics_and_checkpoint_hashes_verified": true
+    },
+    {
+      "epoch": 12,
+      "prediction_metrics_and_checkpoint_hashes_verified": true
+    },
+    {
+      "epoch": 13,
+      "prediction_metrics_and_checkpoint_hashes_verified": true
+    },
+    {
+      "epoch": 14,
+      "prediction_metrics_and_checkpoint_hashes_verified": true
+    },
+    {
+      "epoch": 15,
+      "prediction_metrics_and_checkpoint_hashes_verified": true
+    },
+    {
+      "epoch": 16,
+      "prediction_metrics_and_checkpoint_hashes_verified": true
+    },
+    {
+      "epoch": 17,
+      "prediction_metrics_and_checkpoint_hashes_verified": true
+    },
+    {
+      "epoch": 18,
+      "prediction_metrics_and_checkpoint_hashes_verified": true
+    },
+    {
+      "epoch": 19,
+      "prediction_metrics_and_checkpoint_hashes_verified": true
+    },
+    {
+      "epoch": 20,
+      "prediction_metrics_and_checkpoint_hashes_verified": true
+    },
+    {
+      "epoch": 21,
+      "prediction_metrics_and_checkpoint_hashes_verified": true
+    },
+    {
+      "epoch": 22,
+      "prediction_metrics_and_checkpoint_hashes_verified": true
+    },
+    {
+      "epoch": 23,
+      "prediction_metrics_and_checkpoint_hashes_verified": true
+    },
+    {
+      "epoch": 24,
+      "prediction_metrics_and_checkpoint_hashes_verified": true
+    },
+    {
+      "epoch": 25,
+      "prediction_metrics_and_checkpoint_hashes_verified": true
+    },
+    {
+      "epoch": 26,
+      "prediction_metrics_and_checkpoint_hashes_verified": true
+    },
+    {
+      "epoch": 27,
+      "prediction_metrics_and_checkpoint_hashes_verified": true
+    },
+    {
+      "epoch": 28,
+      "prediction_metrics_and_checkpoint_hashes_verified": true
+    },
+    {
+      "epoch": 29,
+      "prediction_metrics_and_checkpoint_hashes_verified": true
+    },
+    {
+      "epoch": 30,
+      "prediction_metrics_and_checkpoint_hashes_verified": true
+    },
+    {
+      "epoch": 31,
+      "prediction_metrics_and_checkpoint_hashes_verified": true
+    },
+    {
+      "epoch": 32,
+      "prediction_metrics_and_checkpoint_hashes_verified": true
+    },
+    {
+      "epoch": 33,
+      "prediction_metrics_and_checkpoint_hashes_verified": true
+    },
+    {
+      "epoch": 34,
+      "prediction_metrics_and_checkpoint_hashes_verified": true
+    },
+    {
+      "epoch": 35,
+      "prediction_metrics_and_checkpoint_hashes_verified": true
+    },
+    {
+      "epoch": 36,
+      "prediction_metrics_and_checkpoint_hashes_verified": true
+    },
+    {
+      "epoch": 37,
+      "prediction_metrics_and_checkpoint_hashes_verified": true
+    },
+    {
+      "epoch": 38,
+      "prediction_metrics_and_checkpoint_hashes_verified": true
+    }
+  ],
+  "verified_updates_per_arm": 282036,
+  "shared_hash_chain_verified": true,
+  "final_checkpoint_matches_shared_state": true,
+  "limitations": "One seed, reused 256-image development set. Image bootstrap is exploratory, not subject/session/seed uncertainty. Fixed final epoch38 is primary."
+}

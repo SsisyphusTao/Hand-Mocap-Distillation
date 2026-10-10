@@ -1,0 +1,10 @@
+{
+  "seed": 20260929,
+  "epochs": 38,
+  "batch_size": 32,
+  "workers": 4,
+  "lr": 0.001,
+  "crop_base_scale": 1.5,
+  "feature_weight": 1.0,
+  "checkpoint_interval_batches": 1000
+}

@@ -1,0 +1,20 @@
+{
+  "parent_config": "experiments/wilor_transfer/configs/pilot.example.json",
+  "prefit_config": "experiments/wilor_transfer/configs/prefit.example.json",
+  "seed": 20260917,
+  "epochs": 10,
+  "expected_images_per_epoch": 237517,
+  "batch_size": 32,
+  "microbatch_size": 8,
+  "teacher_batch_size": 4,
+  "workers": 4,
+  "lr": 1e-05,
+  "weight_decay": 0,
+  "feature_weight": 0.1,
+  "checkpoint_interval_batches": 128,
+  "teacher_precision": "float32 forward, pooled float16 targets, float32 matching loss",
+  "epoch_definition": "one visit to every admitted image, new permutation and paired augmentations each epoch, no dropped tail",
+  "initialization": "all three students reset to selected supervised epoch9; fresh Adam; ten additional complete epochs",
+  "head_policy": "fresh and prefitted region heads both trainable",
+  "quality_policy": "Historical ten-epoch protocol; original run stopped after 2.31 epochs; any new run is a new experiment"
+}
